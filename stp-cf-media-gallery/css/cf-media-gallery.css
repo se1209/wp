@@ -1,0 +1,93 @@
+#images-container ul:after,
+#images-container ul:before {
+    content: '';
+    display: table;
+}
+#images-container ul:after {
+    clear: both;
+}
+/*
+?????
+*/
+/*#images-container ul {*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*}*/
+#images-container ul li.add,
+#images-container ul li.image,
+#images-container ul li.wc-metabox-sortable-placeholder {
+    background: #f7f7f7 none repeat scroll 0 0;
+    border: 1px solid #d5d5d5;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    cursor: move;
+    float: left;
+    margin: 9px 9px 0 0;
+    position: relative;
+    width: 80px;
+}
+#images-container ul li.add img,
+#images-container ul li.image img,
+#images-container ul li.wc-metabox-sortable-placeholder img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+#images-container ul ul.actions {
+    display: none;
+    padding: 2px;
+    position: absolute;
+    right: -8px;
+    top: -8px;
+}
+#images-container ul ul.actions li {
+    float: right;
+    margin: 0 0 0 2px;
+}
+#images-container ul ul.actions li a {
+    display: block;
+    height: 0;
+    margin: 0;
+    overflow: hidden;
+    width: 1em;
+}
+#images-container ul ul.actions li a.tips {
+    cursor: pointer;
+}
+#images-container ul ul.actions li a.delete {
+    display: block;
+    font-size: 1.4em;
+    width: 1em;
+    height: 1em;
+    position: relative;
+    text-indent: -9999px;
+}
+#images-container ul ul.actions li a.delete:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    content: "X";
+    font-family: Verdana;
+    font-variant: normal;
+    font-weight: 400;
+    left: 0;
+    line-height: 1;
+    margin: 0;
+    text-align: center;
+    text-indent: 0;
+    text-transform: none;
+    top: 0;
+}
+#images-container ul ul.actions li a.delete:hover:before {
+    background-color: #a00;
+}
+#images-container ul li:hover ul.actions {
+    display: block;
+}
+.add_images { padding: 0 12px 12px; }
